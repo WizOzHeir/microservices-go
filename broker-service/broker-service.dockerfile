@@ -14,7 +14,7 @@ RUN chmod +x /app/brokerApp
 # tiny image
 FROM alpine:latest
 
-RUN mkdir/app
+RUN mkdir /app
 
 COPY --from=builder /app/brokerApp /app
 CMD [ "/app/brokerApp" ]
